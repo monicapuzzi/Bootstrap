@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whiskey Drop | Taste a new whiskey every month</title>
+    <!-- os links de site sempre addiciona no head para rodar-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
@@ -25,14 +27,21 @@
         </div>
         <!--</div>-->
     </nav>
-    <article class="container mt-3">
+    <article class="container mt-3"> <!-- esse codigo de mt-3 ou 4 ou 5 sao para dar espacos nas escritas, ficar mais bonito-->
+        <div class="row d-none d-sm-block"> <!-- esse novo row eh uma janela adicionada so no site -->
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for the price of 6! <a href="">See here for more details</a>
+                </div>
+            </div>
+        </div>
         <!-- Callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout jumbotron text-center">
+                <section class="callout jumbotron text-center"> <!-- esse jumbotron eh para nao aparecer no mobile so no site normal-->
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                        <s class="d-none d-sm-inline">€19.99</s>
+                        <s class="d-none d-sm-inline">€19.99</s> <!-- eh para nao aparecer no mobile so no site normal-->
                         <span class="d-inline d-sm-none"><br></span>
                         <strong><mark>First one is free!</mark></strong></p>
                     <p><button class="btn btn-lg btn-success">Sign Up!</button></p>
@@ -52,16 +61,30 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
-                        <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="images/girl-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about.</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I haven't been sober for months!</p>
-                        <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block"> <!-- esse codigo eh para somente aparecer a imagem no site e nao mobile-->
+                            <img src="images/guy-image.png" class="rounded-circle mr-3" height=100 width=100>
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I haven't been sober for months!</p>
+                                <footer class="blockquote-footer">Jane Doe on <cite title="Twitter">Twitter</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -77,22 +100,22 @@
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="feature">
-                        <h3>Feature 1</h3>
+                    <div class="feature"> <!-- esse codigo d-none d-sm-inline eh para nao aparecer o icone no mobile so no site-->
+                        <h3><i class="fas fa-gift d-none d-sm-inline"></i> Feature 1 <span class="badge badge-success">New!</span></h3> <!--codigo span para criar o new em verde -->
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3>Feature 2</h3>
+                        <h3><i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                     </div>
                 </div>
                 <div class="col-12 d-md-none d-lg-block col-lg-4">
                     <div class="feature">
-                        <h3>Feature 3</h3>
+                        <h3><i class="fas fa-times-circle d-none d-sm-inline"></i> Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p><a class="btn btn-sm btn-light" href="">Read More</a></p>
                     </div>
