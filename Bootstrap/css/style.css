@@ -1,18 +1,18 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Domine', serif;
 }
 
-/* Containers */
+/* Containers  esses containers sao do features - cor de escrita e fundo- isso tambem deve ser incluido no html - linha 128 */
 
 .container-wrapper--red {
  background-color: #e42f0f;
-    color: white;
+    color: black;
 
 }
 
 .callout-container {
     height: 100vh;
-
+/* copiei e colei do site- perfect full page background image-css tricks */
     background: url('../images/whisky-image.jpg') no-repeat bottom right fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -25,14 +25,14 @@ body {
 
     position: relative;
 }
-
+/* esse opaque overlay usa a imagem toda sem deixar falhas e na position:relative nao deixa espacos- em cima*/
 .opaque-overlay {
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(26, 25, 25, 0.411);
 }
 
 .content-container {
@@ -40,13 +40,14 @@ body {
     padding-bottom: 75px;
 }
 
-/* Navbar */
+/* Navbar - sao barras de navegacao- onde click e entra */
 
 .navalert-container {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 1; 
+    /* esse z-index: 1 eh usado quando o conteudo esta por debaixo de outro, entao coloca-se para ele sobrepor a imagem ou cor */
     padding-left: 0;
     padding-right: 0;
 }
@@ -54,10 +55,10 @@ body {
 .navbar {
     margin-bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .25);
+    background-color: rgba(26, 25, 25, 0.411);
     border: 0;
 }
-
+/* esse Navbar-toggler - eh a navegacao de tres botoes, coloca-se a borda a zero para ele se difundir com o resto do conteudo para mobile. */
 .navbar .navbar-toggler {
     border: 0;
 }
@@ -71,7 +72,7 @@ body {
 }
 
 
-/* Jumbotron */
+/* Jumbotron  eh a escrita por cima da imagem*/
 
 .jumbotron {
     background-color: transparent;
@@ -85,14 +86,14 @@ body {
 }
 
 .jumbotron .lead {
-    color: #a7a7a7;
+    color: #c4c11a;
     margin: 25px 0;
 }
 
 .jumbotron small {
     font-size: 60%;
     font-style: italic;
-    color: #d0d0d0;
+    color: #c4c11a;
 }
 
 /* Block dividers */
@@ -104,12 +105,12 @@ body {
     background-color: #444;
 }
 
-.block-divider--orange {
+.block-divider--red {
     background-color: #e42f0f;
 }
 
-.block-divider--white {
-    background-color: white;
+.block-divider--black {
+    background-color: black;
 }
 
 .block-divider--short {
@@ -139,7 +140,7 @@ body {
     color: white;
 }
 
-/* Alert */
+/* Alert - esse col-12 eh a coluna inteira do alerta de cima. coloca-se padding left e right 0 para que ocupe todo o espaco da tela */
 
 .alert-container .col-12 {
     padding-left: 0;
@@ -147,9 +148,9 @@ body {
 }
 
 .site-wide-alert {
-     color: #131211;
-    background-color: #35a826;
-    border-color: #35a826;
+     color: black;
+    background-color: #ece92c;
+    border-color: #ece92c;
     padding: 5px 15px;
     margin-bottom: 0;
     border: 1px solid transparent;
@@ -172,6 +173,7 @@ body {
 
 .quotes .page-header {
     margin-bottom: 25px;
+    
 }
 
 /* Features */
@@ -179,6 +181,7 @@ body {
 .feature {
     text-align: center;
     margin-bottom: 40px;
+    color: black;
 }
 
 .feature i {
@@ -188,11 +191,11 @@ body {
 }
 
 .feature .btn {
-    background-color: white;
-    border-color: white;
+    background-color: #fa0505;
+    border-color: #fa0505;
     border-radius: 15px;
     min-width: 100px;
     font-weight: bold;
     margin-top: 10px;
-    color: #e42f0f
+    color: white;
 }
